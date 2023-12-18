@@ -41,7 +41,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
   cursor: pointer;
   transition: border-color 0.25s;
   color: #ffffff;
@@ -300,4 +300,20 @@ header p {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination a {
+  padding: 5px;
+}
+
+.pagination .selected {
+  border-radius: 6px;
+  background: #646cff;
 }
